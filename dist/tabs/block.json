@@ -1,0 +1,131 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ultrablocks/tabs",
+  "title": "Tabs",
+  "category": "ultrablocks",
+  "description": "Design interactive tabs for versatile content display in tabbed interface.",
+  "textdomain": "ultrablocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": [
+    "style-ultrablocks",
+    "file:./style.css"
+  ],
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "labels": {
+      "type": "object",
+      "default": {}
+    },
+    "stackOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "header": {
+      "type": "object",
+      "default": {},
+      "selector": ".ultrablocks--tabs"
+    },
+    "tab": {
+      "type": "object",
+      "default": {},
+      "selector": ".ultrablocks--tab"
+    },
+    "tabLayout": {
+      "type": "string",
+      "default": "horizontal"
+    },
+    "tabVertical": {
+      "type": "object",
+      "default": {},
+      "selector": ".ultrablocks--vertical"
+    },
+    "activeTab": {
+      "type": "object",
+      "default": {},
+      "selector": ".ultrablocks--tab--active"
+    },
+    "hoverTab": {
+      "type": "object",
+      "default": {},
+      "selector": ".ultrablocks--tab:hover"
+    },
+    "content": {
+      "type": "object",
+      "default": {},
+      "selector": ".wp-block-ultrablocks-tab"
+    },
+    "style": {
+      "type": "object",
+      "default": {}
+    },
+    "showIcon": {
+      "type": "boolean",
+      "default": false
+    },
+    "icon": {
+      "type": "string",
+      "default": "dashicons-admin-generic"
+    },
+    "iconSize": {
+      "type": "number",
+      "default": 20
+    },
+    "iconColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "iconHoverColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "iconPosition": {
+      "type": "string",
+      "default": "left"
+    },
+    "iconSpace": {
+      "type": "number",
+      "default": 5
+    },
+    "iconVertical": {
+      "type": "number",
+      "default": 0
+    },
+    "iconVerticalPosition": {
+      "type": "string",
+      "default": "top"
+    },
+    "iconHorizontal": {
+      "type": "number",
+      "default": 0
+    },
+    "iconHorizontalPosition": {
+      "type": "string",
+      "default": "left"
+    },
+    "iconStyle": {
+      "type": "object",
+      "default": {},
+      "selector": ".ultrablocks--tabs--icon"
+    },
+    "reverseDirection": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "viewScript": "file:./view.js",
+  "providesContext": {
+    "ultrablocks/tabs": "labels"
+  },
+  "version": "0.0.1",
+  "supports": {
+    "className": true,
+    "html": false,
+    "anchor": true,
+    "align": true,
+    "alignWide": true
+  }
+}

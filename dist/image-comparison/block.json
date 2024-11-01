@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ultrablocks/image-comparison",
+  "version": "0.0.1",
+  "title": "Image Comparison",
+  "category": "ultrablocks",
+  "description": "Image Comparison Block",
+  "example": {},
+  "textdomain": "ultrablocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "attributes": {
+    "labelsStyle": {
+      "type": "object",
+      "default": {},
+      "selector": ".ub-image-comparison-label"
+    }
+  },
+  "viewScript": "file:./view.js",
+  "supports": {
+    "className": true,
+    "align": true,
+    "alignWide": true
+  }
+}

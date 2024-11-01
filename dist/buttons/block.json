@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ultrablocks/buttons",
+  "version": "0.0.1",
+  "title": "Buttons",
+  "category": "ultrablocks",
+  "description": "Buttons block for the UltraBlocks plugin.",
+  "example": {},
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "style": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "textdomain": "ultrablocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": [
+    "style-ultrablocks",
+    "file:./style.css"
+  ],
+  "supports": {
+    "className": true,
+    "html": false,
+    "anchor": true,
+    "align": true,
+    "alignWide": true
+  }
+}

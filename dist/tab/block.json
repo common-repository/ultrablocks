@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ultrablocks/tab",
+  "title": "Tab",
+  "description": "A single tab block for the UltraBlocks plugin.",
+  "parent": [
+    "ultrablocks/tabs"
+  ],
+  "category": "ultrablocks",
+  "textdomain": "ultrablocks",
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string",
+      "default": "Tab"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": false
+    },
+    "isDefault": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "usesContext": [
+    "ultrablocks/tabs"
+  ],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": [
+    "style-ultrablocks",
+    "file:./style.css"
+  ],
+  "version": "0.0.1",
+  "supports": {
+    "className": true,
+    "html": false,
+    "anchor": true,
+    "align": true,
+    "alignWide": true
+  }
+}

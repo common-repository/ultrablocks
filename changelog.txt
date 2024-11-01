@@ -1,0 +1,25 @@
+## Changelog
+
+### Version 1.0.0
+
+**Initial Release**
+- Added **Premium Gutenberg Blocks** for enhanced design capabilities.
+- **Lightning-Fast Assets** for quick-loading icons, fonts, and templates.
+- Integrated with **Full Site Editor** for seamless editing.
+- **Native WordPress Block Interface** for an intuitive experience.
+- **Draggable Container Width** for easy layout adjustments.
+- **Style Copy & Paste** to maintain design consistency.
+- **Drag-and-Drop** functionality for simple layout changes.
+- **Responsive Design** for mobile, desktop, and tablet.
+- **Accordion Block** for collapsible content sections.
+- **Buttons Block** for customizable call-to-action buttons.
+- **Container Block** for structured content organization.
+- **Countdown Block** for event and promotion timers.
+- **Image Comparison Block** for interactive before-and-after views.
+- **Google Maps Block** for embedding location maps.
+- **Grid Block** for responsive grid layouts.
+- **Lottie Animation Block** for engaging animations.
+- **Paragraph Block** for text styling and formatting.
+- **Search Block** for easy content searching.
+- **Shape Divider Block** for decorative section dividers.
+- **Tabs Block** for organized content presentation.

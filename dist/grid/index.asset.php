@@ -1,0 +1,1 @@
+<?php return array('dependencies' => array('@ultrablocks/library', 'react', 'wp-block-editor', 'wp-blocks', 'wp-components', 'wp-data', 'wp-element', 'wp-i18n', 'wp-primitives'), 'version' => 'd65e295d13c1874c2ba9');

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ultrablocks/countdown",
+  "version": "0.0.1",
+  "title": "Countdown",
+  "category": "ultrablocks",
+  "description": "Countdown block for displaying a countdown timer.",
+  "example": {},
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "style": {
+      "type": "object",
+      "default": {}
+    },
+    "itemStyle": {
+      "type": "object",
+      "default": {},
+      "selector": ".ubs-countdown-item"
+    },
+    "timeStyle": {
+      "type": "object",
+      "default": {},
+      "selector": ".ubs-countdown-time"
+    },
+    "labelStyle": {
+      "type": "object",
+      "default": {},
+      "selector": ".ubs-countdown-label"
+    },
+    "date": {
+      "type": "string"
+    },
+    "units": {
+      "type": "array",
+      "default": [
+        "days",
+        "hours",
+        "minutes",
+        "seconds"
+      ]
+    },
+    "unitsAlign": {
+      "type": "string"
+    },
+    "numberFontSize": {
+      "type": "number"
+    },
+    "labelFontSize": {
+      "type": "number"
+    },
+    "numberColor": {
+      "type": "string"
+    },
+    "labelColor": {
+      "type": "string"
+    }
+  },
+  "textdomain": "ultrablocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "viewScript": "file:./view.js",
+  "supports": {
+    "className": true,
+    "html": false,
+    "align": true,
+    "alignWide": true
+  }
+}

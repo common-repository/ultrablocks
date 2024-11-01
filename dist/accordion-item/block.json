@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ultrablocks/accordion-item",
+  "title": "Accordion Item",
+  "description": "An item for the Accordion block.",
+  "category": "ultrablocks",
+  "textdomain": "ultrablocks",
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string",
+      "default": "Accordion Item"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": false
+    },
+    "slug": {
+      "type": "string"
+    },
+    "isDefault": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "parent": [
+    "ultrablocks/accordion"
+  ],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": [
+    "style-ultrablocks",
+    "file:./style.css"
+  ],
+  "version": "0.0.2",
+  "supports": {
+    "className": true,
+    "html": false,
+    "anchor": true,
+    "align": true,
+    "alignWide": true
+  }
+}

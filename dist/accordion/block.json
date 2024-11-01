@@ -1,0 +1,77 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ultrablocks/accordion",
+  "title": "Accordion",
+  "category": "ultrablocks",
+  "description": "Create a beautiful accordion with ultrablocks.",
+  "textdomain": "ultrablocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": [
+    "style-ultrablocks",
+    "file:./style.css"
+  ],
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "itemsCount": {
+      "type": "number",
+      "default": 2
+    },
+    "collapseOne": {
+      "type": "boolean",
+      "default": true
+    },
+    "collapseAll": {
+      "type": "boolean",
+      "default": false
+    },
+    "collapseTitleTag": {
+      "type": "string",
+      "default": "div"
+    },
+    "style": {
+      "type": "object",
+      "default": {}
+    },
+    "styleHeading": {
+      "type": "object",
+      "default": {},
+      "selector": ".ub-accordion-item-heading-inner"
+    },
+    "styleHeadingActive": {
+      "type": "object",
+      "default": {},
+      "selector": ".is-active .ub-accordion-item-heading-inner"
+    },
+    "styleHeadingHover": {
+      "type": "object",
+      "default": {},
+      "selector": ".ub-accordion-item-heading-inner:hover"
+    },
+    "styleGap": {
+      "type": "object",
+      "default": {},
+      "selector": ".ub-accordion-item + .ub-accordion-item"
+    },
+    "styleContent": {
+      "type": "object",
+      "default": {},
+      "selector": ".ub-accordion-item-content-inner"
+    }
+  },
+  "viewScript": "file:./view.js",
+  "providesContext": {
+    "ultrablocks/tabs": "labels"
+  },
+  "version": "0.0.2",
+  "supports": {
+    "className": true,
+    "html": false,
+    "anchor": true,
+    "align": true,
+    "alignWide": true
+  }
+}

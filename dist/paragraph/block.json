@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ultrablocks/paragraph",
+  "version": "0.0.1",
+  "title": "Paragraph",
+  "category": "ultrablocks",
+  "description": "Fully-responsive paragraphs.",
+  "example": {},
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "style": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "textdomain": "ultrablocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "supports": {
+    "className": true
+  }
+}
